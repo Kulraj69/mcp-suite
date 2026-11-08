@@ -38,3 +38,13 @@ the stdio loop (including malformed JSON and tool-error paths).
 Deterministic and offline. This is the plumbing layer: point a real MCP
 client at it to give an agent audited, budget-aware tools (see `cost-router`,
 `trajectory-eval`, `agent-lab`).
+
+## Demo
+
+`demo.py` reproduces the recorded demo run end to end, offline (standard
+library only, no model calls):
+
+    python demo.py
+
+It executes the library's real code path and prints the same output shown in
+the recorded demo video.
